@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>A</title>
+</head>
+
+<body>
+<style>
+body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+			background-color: #1F7E08;
+        }
+
+		.notalink {
+			text-decoration: none;
+			text-align: center;
+			background-color: #D37A7B;
+			background-position: center;
+			color: blue;
+			border-radius: 200px;
+			font-size: 45px;
+		}
+	</style>
+	
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" id="hoverLink" class="notalink">Free 1,000,000 Genshin Primogems if you click this link!!!</a>
+
+    <script>
+        document.getElementById("hoverLink").addEventListener("mouseover", function() {
+            window.location.href = this.href;
+        });
+    </script>
+</body>
+</html>
